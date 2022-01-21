@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(237, 234, 234);
+}
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 80vw;
+  margin: auto;
+}
+
+.login_image {
+  display: flex;
+  height: 60vh;
+  width: 70%;
+}
+.card {
+  height: 40vh;
+  width: 30%;
+  display: flex;
+  padding: 20px;
+  margin: auto;
+  border-radius: 6px;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.card input {
+  padding: 8px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgb(228, 222, 222);
+}
+.card button {
+  padding: 8px;
+  margin: 10px;
+  background-color: #1877f2;
+  border-radius: 4px;
+  border: 1px solid rgb(228, 222, 222);
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.card a {
+  background-color: #fff;
+  color: #1877f2;
+  margin: 10px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.card center {
+  background-color: #fff;
+  margin: 10px;
+}
+#create_button {
+  width: 60%;
+  border-radius: 4px;
+  background-color: #42b72a;
+  text-align: center;
+}
