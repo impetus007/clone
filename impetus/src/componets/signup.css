@@ -1,0 +1,31 @@
+.signup-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.signup-body form {
+  text-align: center;
+  height: 60vh;
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  padding: 1rem;
+}
+.signup-body input {
+  margin: 10px;
+  padding: 2px;
+  border-radius: 4px;
+  background-color: white;
+}
+.signup-body button {
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #42b72a;
+  text-align: center;
+  color: white;
+  border: 0px;
+}

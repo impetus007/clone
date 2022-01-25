@@ -1,9 +1,9 @@
 * {
   padding: 0;
   margin: 0;
-  background-color: rgb(237, 234, 234);
+  background-color: rgb(246, 246, 246);
 }
-.body {
+.login {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,8 +14,17 @@
 
 .login_image {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 60vh;
-  width: 70%;
+  width: 60%;
+  box-sizing: border-box;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+.img {
+  width: 200px;
+  margin-left: 1px;
 }
 .card {
   height: 40vh;
