@@ -6,7 +6,7 @@ function Sidebar_chat() {
   return (
     <div className="sidebar_chat">
       <div className="Avatar">
-        <Avatar />
+        <avatar />
       </div>
 
       <div className="Sidebarchat_info">

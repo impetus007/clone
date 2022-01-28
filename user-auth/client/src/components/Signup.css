@@ -1,0 +1,6 @@
+.Signup {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  height: 80vh;
+}

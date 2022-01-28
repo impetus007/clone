@@ -1,0 +1,6 @@
+.login {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  height: 40vh;
+}

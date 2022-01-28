@@ -10,7 +10,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar_header">
-        <Avatar src="https://media-exp1.licdn.com/dms/image/C5603AQHIjW-qWus5Jg/profile-displayphoto-shrink_400_400/0/1602911997708?e=1645660800&v=beta&t=e9YEFHnO1lWXDEIX36WmJ6jhtpfOAzed2U8u18djsic" />
+        <avatar src="https://media-exp1.licdn.com/dms/image/C5603AQHIjW-qWus5Jg/profile-displayphoto-shrink_400_400/0/1602911997708?e=1645660800&v=beta&t=e9YEFHnO1lWXDEIX36WmJ6jhtpfOAzed2U8u18djsic" />
         <div className="sidebar_headerRight">
           <IconButton>
             <DonutLargeIcon />

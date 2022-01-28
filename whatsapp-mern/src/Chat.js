@@ -27,7 +27,7 @@ function Chat({ messages }) {
   return (
     <div className="chat">
       <div className="chat_header">
-        <Avatar />
+        <avatar />
         <div className="chat_headerinfo">
           <h3>Room Name</h3>
           <p>last seen at ...</p>
@@ -37,7 +37,7 @@ function Chat({ messages }) {
             <SearchOutlined />
           </IconButton>
           <IconButton>
-            <AttachFile />
+            <attachFile />
           </IconButton>
           <IconButton>
             <MoreVert />
