@@ -37,7 +37,7 @@ const userSchema = new mongoose.Schema({
   ],
 });
 
-// hashing the password
+// Hashing the password
 userSchema.pre("save", async function (next) {
   console.log("Hi from inside server");
   if (this.isModified("password")) {

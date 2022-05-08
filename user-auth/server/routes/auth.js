@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const authenticate = require("../middleware/authentication");
 
 require("../database/connection");
 const User = require("../model/userSchema");
@@ -13,7 +14,6 @@ router.get("/", (req, res) => {
 // promises
 // router.post("/register", (req, res) => {
 //   const { name, email, phone, occupation, password, cpassword } = req.body;
-
 //   if (!name || !email || !phone || !occupation || !password || !cpassword) {
 //     return res.status(422).json({ error: "plz fill the required property !" });
 //   }
@@ -47,6 +47,9 @@ router.get("/", (req, res) => {
 // });
 
 // Async-await
+// wehnever user have to post submit in your site then use post
+
+// u can get user data by just writing console.log(req.body)
 router.post("/register", async (req, res) => {
   const { name, email, phone, occupation, password, cpassword } = req.body;
   if (!name || !email || !phone || !occupation || !password || !cpassword) {
@@ -105,5 +108,10 @@ router.post("/signin", async (req, res) => {
     console.log(err);
   }
 });
+
+router.get("/about", authenticate, (req, res, next) =>
+  console.log("hello my about")
+);
+//res.send("hello about world from my server");
 
 module.exports = router;
