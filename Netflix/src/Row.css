@@ -1,0 +1,31 @@
+.row {
+  margin-left: 30px;
+}
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  padding: 25px;
+  /* overflow-x: scroll; */
+}
+
+/* it hide scrollbar icon and remain keep functionality as it is */
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+.row_poster {
+  width: 100%;
+  object-fit: contain;
+  margin-right: 10px;
+  max-height: 100px;
+  transition: transform 500ms;
+}
+.row_poster:hover {
+  transform: scale(1.2);
+}
+.row_posterLarge {
+  max-height: 250px;
+  padding: 18px;
+}
+.row_posterLarge:hover {
+  transform: scale(1.3);
+}
