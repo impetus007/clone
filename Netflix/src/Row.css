@@ -1,5 +1,6 @@
 .row {
   margin-left: 30px;
+  color: white;
 }
 .row_posters {
   display: flex;

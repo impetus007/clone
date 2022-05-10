@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import axios from "./axios";
 import requests from "./request";
+import "./Banner.css";
 function Banner() {
   const [movie, setMovie] = useState([]);
   useEffect(() => {
@@ -16,13 +17,38 @@ function Banner() {
     fetchData();
   }, []);
 
-  console.log(movie);
+  function truncate(str, n) {
+    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+  }
+
+  //console.log(`"https://image.tmdb.org/t/p/priginal/${movie?.backdrop_path}"`);
 
   return (
-    <header>
-      {/* {title} */}
-      {/* {div 2 buttons} */}
-      {/* {descriptions} */}
+    <header
+      className="banner"
+      style={{
+        backgroundSize: "cover",
+        backgroundImage: `url(
+            "https://image.tmdb.org/t/p/original/${movie?.backdrop_path}"
+        )`,
+        backgroundPosition: "center center",
+      }}
+    >
+      <div className="banner_contents">
+        {/* {title} */}
+        <h1 className="banner_title">
+          {movie?.title || movie?.name || movie?.original_name}
+        </h1>
+        {/* {div 2 buttons} */}
+        <div>
+          <button className="banner_button">Play</button>
+          <button className="banner_button">My List</button>
+        </div>
+        <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
+
+        {/* {descriptions} */}
+      </div>
+      <div className="banner_fadeBottom" />
     </header>
   );
 }
