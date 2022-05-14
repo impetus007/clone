@@ -1,0 +1,11 @@
+.Card {
+  display: flex;
+}
+.card {
+  height: 300px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  background-color: antiquewhite;
+  margin: 2rem;
+}

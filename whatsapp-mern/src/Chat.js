@@ -6,10 +6,10 @@ import {
 } from "@mui/icons-material";
 import MoreVert from "@mui/icons-material/MoreVert";
 import { Avatar, IconButton } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import "./Chat.css";
 import axios from "./axios";
-import { const [state, setstate] = useState(initialState)}
+// import { const [state, setstate] = useState(initialState)}
 
 function Chat({ messages }) {
   const [input, setInput] = useState("");

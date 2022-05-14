@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(236, 232, 227);
+  padding: 0.5rem;
+}
+.logo {
+  flex: 1;
+}
+.search {
+  flex: 2;
+}
+.login {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+}
+.searchinput {
+  outline: none;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
