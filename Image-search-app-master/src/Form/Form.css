@@ -1,0 +1,41 @@
+body{
+    background-color: #FFF6EA;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.input{
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    margin-right: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 20px;
+    background: #FFA8A8;
+    height: 34px;
+    cursor: pointer;
+}
+.imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.a{
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
