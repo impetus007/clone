@@ -4,8 +4,9 @@ import { useNavigate } from "react-router-dom";
 import "./login.css";
 
 function Login() {
-  let navigate = useNavigate;
+  let navigate = useNavigate();
   //let history = useHistory;
+  const [isLogin, setLogin] = useState("false");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -29,8 +30,9 @@ function Login() {
       window.alert("Login Successfully");
       //history.push("/");
       console.log("Login Successfully");
+      setLogin("true");
+      navigate("/about");
     }
-    navigate("/about");
   };
 
   return (
@@ -40,6 +42,7 @@ function Login() {
         <input
           placeholder="Email"
           type="email"
+          name="name"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />

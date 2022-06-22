@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -16,9 +16,11 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />}></Route>
         </Routes>
+
         <Routes>
           <Route path="/about" element={<About />}></Route>
         </Routes>
+
         <Routes>
           <Route path="/login" element={<Login />}></Route>
         </Routes>

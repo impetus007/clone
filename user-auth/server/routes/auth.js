@@ -109,9 +109,11 @@ router.post("/signin", async (req, res) => {
   }
 });
 
-router.get("/about", authenticate, (req, res, next) =>
-  console.log("hello my about")
-);
+// in place of authentication i can give any name to this
+router.get("/about", authenticate, (req, res) => {
+  console.log("hello my about");
+  res.send(req.rootUser);
+});
 //res.send("hello about world from my server");
 
 module.exports = router;
