@@ -1,0 +1,137 @@
+/* Main Component */
+
+.Notices_Admin {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.notices-admin-container {
+    width: 85%;
+}
+
+.notices-admin-btn {
+    margin: 30px 0;
+    padding: 6px 8px;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+    transition: all 250ms ease-in-out;
+}
+
+.notices-admin-btn:hover {
+
+    transition: all 250ms ease-in-out;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.55);
+
+}
+
+
+
+
+
+
+
+
+/* Create Component */
+
+.notices-admin-create-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.notices-admin-create-container-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.notices-admin-create-box {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    padding: 30px 10px;
+    border: 1px solid black;
+    background-color: #e9a5a5;
+}
+
+.notices-admin-create-main {
+    margin-top: 32px;
+}
+
+.notices-admin-create-btn {
+    margin: 30px 0;
+    padding: 6px 8px;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+    transition: all 250ms ease-in-out;
+}
+
+.notices-admin-create-btn:hover {
+
+    transition: all 250ms ease-in-out;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.55);
+
+}
+
+.notice-admin-create-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.notice-admin-create-inp {
+    /* display: flex; */
+    width: 45%;
+    min-width: 250px;
+    margin: 20px 0;
+}
+
+.notice-admin-create-inp:nth-child(1) {
+    justify-content: space-between;
+}
+
+.notice-admin-create-inp label {
+    margin: 10px 12.5px;
+    /* width: 100%; */
+}
+
+.notice-admin-create-inp textarea:nth-child(1) {
+    margin-right: 10px;
+}
+
+.notice-admin-create-inp input,
+textarea,
+select {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+}
+
+.notice-admin-create-inp input,
+textarea {
+    /* width: 100%; */
+    padding: 4px 10px;
+    margin: 10px 12.5px;
+}
+
+.notice-admin-create-inp select {
+    padding: 4px 10px;
+}
+
+#notice-admin-create-file {
+    padding: 0;
+}
+
+.notice-admin-create-submit {
+    padding: 0;
+}
+
+.notice-admin-create-submit button {
+    padding: 7px 15px;
+}
+
+.notice-admin-create-submit button:nth-child(1) {
+    background-color: #fffe01;
+}

@@ -1,0 +1,59 @@
+.student-attnd-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.student-attnd-container-main {
+    width: 95%;
+}
+
+.student-attnd-container-main .top {
+    margin: 20px 0;
+}
+
+.student-attnd-container-main .top label {
+    margin-right: 10px;
+}
+
+.student-attnd-container-main .top input {
+    margin-right: 25px;
+}
+
+.student-attnd-container-main .top button {
+    background-color: #dcdcdc;
+    padding: 4px 20px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.77);
+    cursor: pointer;
+}
+
+.student-attnd-container-main .top button:active {
+    box-shadow: unset;
+}
+
+
+
+
+
+.student-attnd-container-main .bottom table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.student-attnd-container-main .bottom td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.student-attnd-container-main .bottom table tr:nth-child(odd) {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+.student-attnd-container-main .bottom table thead tr {
+
+    background-color: #dcdcdc !important;
+}

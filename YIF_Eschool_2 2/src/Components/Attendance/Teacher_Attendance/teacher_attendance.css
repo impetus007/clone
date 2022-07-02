@@ -1,0 +1,94 @@
+.Tattendance-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.Tattendance-container-main {
+    width: 90%;
+}
+
+
+.Tattend-top {
+    display: flex;
+    width: 100%;
+}
+
+.Tattend-top label {
+    margin-right: 10px;
+}
+
+.Tattend-top select {
+    margin-right: 25px;
+}
+
+.Tattend-top button {
+    margin-right: 25px !important;
+    /* padding: 10px 10px !important; */
+}
+
+.Tattend-top a {
+    text-decoration: none;
+    color: black;
+}
+
+.Tattendance-container select {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.mark-all-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.mark-all-container label {
+    margin-right: 10px;
+}
+
+.Tattend-middle table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.Tattend-middle td,
+th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.Tattend-middle table thead tr {
+    background-color: #dcdcdc !important;
+}
+
+.Tattend-middle table tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+.Tattend-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Tattend-bottom a {
+    flex: 1.5;
+    display: flex;
+    justify-content: end;
+    color: black;
+    text-decoration: none;
+}
+
+.Tattendance-container button {
+    padding: 10px 5%;
+    margin: 15px 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+    background-color: #f7f7f7;
+}
+
+
+.teacher-prev-attendace-btn {
+    background-color: yellow !important;
+}

@@ -1,0 +1,253 @@
+.ad-lib {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.ad-lib-container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-lib-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.ad-lib-container table td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.ad-lib-container-top {
+    display: flex;
+}
+
+.ad-lib-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-lib-container form select {
+    background-color: white;
+}
+
+.ad-lib-container form button {
+    background-color: white;
+    width: fit-content;
+    padding: 8px 15px;
+}
+
+.ad-lib-ch {
+    display: flex;
+    width: 100%;
+}
+
+.ad-lib-library {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5 1;
+    flex-grow: 2;
+    background-color: rgb(190, 168, 224);
+    padding: 10px;
+}
+
+.ad-lib-con {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5 1;
+    flex-grow: 2;
+    background-color: rgba(222, 216, 231, 0.432);
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.ad-lib-content-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.ad-lib-main-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.ad-lib-content-container button {
+    width: fit-content;
+    background: #dfdfdf;
+    padding: 8px 14px;
+    font-size: 18px;
+    margin-left: 0;
+}
+
+.ad-lib-con-progress {
+    background-color: rgba(222, 216, 231, 0.432);
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.ad-lib-con-progress p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.ad-lib-con-progress p button {
+    background-color: white;
+    padding: 8px 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+}
+
+.ad-lib-con-progress p button:active {
+    box-shadow: unset !important;
+}
+
+.ad-lib-con-details {
+    width: 100%;
+    display: flex;
+}
+
+.ad-lib-con-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ad-lib-con-details table th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.ad-lib-con-st-details {
+    flex: 0.5 1;
+    background-color: rgb(159, 185, 235);
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.ad-lib-con-st-details form {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ad-lib-library-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.ad-lib-library-main-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.ad-lib-library-container button {
+    background-color: white;
+    padding: 8px 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+    margin-left: 0;
+    /* font-size: 18px; */
+}
+
+.ad-lib-library-container button:active {
+    box-shadow: unset !important;
+}
+
+.ad-lib-library-container-top {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.ad-lib-library-container-top p {
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+
+.ad-lib-library-container-mid {
+    margin-top: 50px;
+}
+
+.ad-lib-library-container table {
+    width: 100%;
+}
+
+.ad-lib-library-container-bottom {
+    margin-top: 50px;
+}
+
+
+/* Admin chapter progress */
+
+.ad-lib-chapter-progress h3 {
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.chapter-progress-container {
+    margin-top: 20px;
+}
+
+.lib-modules-outer {
+    font-size: 25px;
+    padding: 10px 5px;
+    background-color: #dfdfdf;
+    border: 1px solid black;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-modules-inner ul {
+    list-style: none;
+}
+
+.lib-modules-inner {
+    font-size: 20px;
+    height: 0;
+    overflow: hidden;
+}
+
+.lib-modules-inner-open {
+    padding: 10px 15px;
+    height: unset !important;
+}
+
+.lib-modules-inner ul li:not(:first-child) {
+    margin-top: 10px;
+}
+
+.ad-lib-st-wise {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.ad-lib-st-wise-container {
+    width: 90%;
+}
+
+.ad-lib-st-wise-container button {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+    padding: 8px 14px;
+    margin-left: 0 !important;
+}
+
+.ad-lib-st-wise-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ad-lib-st-wise-container table td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+}

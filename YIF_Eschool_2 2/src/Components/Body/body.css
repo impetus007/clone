@@ -1,0 +1,16 @@
+.Body {
+    height: 85vh;
+    flex: 0.8;
+    padding-top: 20px;
+    overflow-y: scroll;
+    flex-grow: 1;
+}
+
+.module-for {
+    font-size: 25px;
+    text-align: center;
+}
+
+.body-content {
+    margin-top: 80px;
+}

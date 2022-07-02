@@ -1,0 +1,142 @@
+.ad-attnd-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ad-attnd-container-main {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-attnd-top {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+.ad-attnd-top a {
+    /* width: 50%; */
+    margin: 0;
+    padding: 10px 100px;
+    background-color: white;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.ad-attnd-top button {
+    margin: 0;
+    padding: 10px 100px;
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+}
+
+.ad-attnd-top-btn-active {
+    box-shadow: inset 1px 1px 3px rgb(0 0 0 / 30%) !important;
+}
+
+.ad-attnd-top button:nth-child(1) {
+    border-right: 1px solid #f7f7f7;
+}
+
+.ad-attnd-middle {
+    width: 100%;
+    border: 1px solid black;
+    /* height: 200px; */
+    padding: 25px 0;
+    display: flex;
+}
+
+
+.ad-attnd-middle button {
+    width: 250px;
+    padding: 8px 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    background-color: white;
+}
+
+.ad-attnd-middle button:focus {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0);
+    transition: all 250ms ease-in-out;
+}
+
+.ad-attnd-middle-invis {
+    display: none;
+}
+
+/* Student attendance */
+
+.ad-attnd-bottom-invis {
+    display: none;
+}
+
+.ad-st-attnd-top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.ad-st-attnd-top label {
+    margin-right: 10px;
+}
+
+.ad-st-attnd-top select {
+    margin-right: 25px;
+}
+
+
+.ad-st-attnd-top button {
+    width: 150px;
+    height: 30px;
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+}
+
+.ad-st-attnd-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.ad-st-attnd-bottom-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad-st-attnd-bottom-info table {
+    flex: 1;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+.ad-st-attnd-table-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ad-st-attnd-table-filter input {
+    margin-top: 8px;
+    width: 60%;
+    padding: 4px;
+}
+
+
+.ad-st-attnd-bottom-info table td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.ad-st-attnd-calendar {
+    flex: 0.45;
+}

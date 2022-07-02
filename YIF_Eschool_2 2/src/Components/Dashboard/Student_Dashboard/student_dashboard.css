@@ -1,0 +1,191 @@
+.Student_Dashboard {
+    display: flex;
+    min-height: 70vh;
+    padding: 0 80px;
+}
+
+
+/* Left Container */
+.student-db-left-container {
+    flex: 0.65;
+    margin-right: 10px;
+    display: flex;
+}
+
+.student-db-left {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.student-db-assessment {
+    height: 20%;
+}
+
+.student-db-assessment button {
+    padding: 8px 20px;
+    margin-left: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    transition: all 250ms ease-in-out;
+    background-color: #acc4f5;
+    cursor: pointer;
+}
+
+.student-db-assessment button:focus {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0);
+    transition: all 250ms ease-in-out;
+}
+
+.student-db-profile-container {
+    height: 40%;
+    border: 1px solid black;
+}
+
+.student-db-profile {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+.student-db-classes-container {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    height: 28%;
+}
+
+.student-db-classes-container h4 {
+    margin-bottom: 15px;
+}
+
+.student-db-classes-container button {
+    padding: 8px 20px;
+    margin-left: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    transition: all 250ms ease-in-out;
+    background-color: #acc4f5;
+    cursor: pointer;
+}
+
+.student-db-classes-container button:focus {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0);
+    transition: all 250ms ease-in-out;
+}
+
+
+/* Calendar , Events and Attendance */
+
+.student-db-right {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.student-db-calendar {
+    width: 100%;
+    /* height: 45%; */
+}
+
+.student-db-events {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 25%;
+}
+
+.student-db-event {
+    display: flex;
+    padding: 8px 4px;
+}
+
+.student-db-event:nth-child(odd) {
+    background-color: peachpuff;
+}
+
+.student-db-event p {
+    margin-right: 10px;
+}
+
+.student-db-attendance-container {
+    height: 25%;
+    border: 1px solid black;
+}
+
+.student-db-attendance {
+    padding: 8px 4px;
+}
+
+.student-db-attendance p {
+    font-size: 18px;
+    margin-left: 12px;
+    color: white;
+}
+
+.student-db-attendance button {
+    padding: 8px 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    transition: all 250ms ease-in-out;
+    background-color: white;
+    cursor: pointer;
+}
+
+.student-db-attendance button:focus {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0);
+    transition: all 250ms ease-in-out;
+}
+
+/* Right Container */
+
+
+.student-db-right-container {
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 600px; */
+}
+
+.student-db-content-container {
+    height: 45%;
+    border: 1px solid black;
+
+}
+
+.student-db-content {
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.student-db-content-head {
+    font-size: 18px;
+    margin-bottom: 25px !important;
+    margin-top: 0 !important;
+}
+
+.student-db-content p {
+    margin: 15px;
+}
+
+
+.student-db-notice-container {
+    height: 45%;
+    background-color: #FFDAB9;
+    overflow: scroll;
+    border: 1px solid black;
+
+}
+
+.student-db-notice {
+    padding: 8px 20px;
+
+}
+
+.student-db-notice-head {
+    font-size: 18px;
+    margin-bottom: 25px !important;
+    margin-top: 0 !important;
+}

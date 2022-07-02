@@ -1,0 +1,19 @@
+.library-toggler {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.library-toggler button {
+    background-color: white;
+    padding: 8px 100px;
+    font-size: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px black;
+    margin: 0 !important;
+}
+
+.library-toggler-btn-clicked {
+    box-shadow: inset 1px 1px 3px black !important;
+}

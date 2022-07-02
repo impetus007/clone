@@ -1,0 +1,40 @@
+.Assesment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Assess-table {
+    width: 85%;
+    height: 100%;
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.Assess-table thead th {
+    background-color: #dcdcdc;
+}
+
+.Assess-table td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.Assess-table tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+.Assess-table tbody tr:hover {
+    background-color: #dcdcdc;
+}
+
+.Assesment .Assess-button {
+    width: 95%;
+    height: 30px;
+    background-color: rgb(157, 190, 251);
+    border-radius: 25px;
+    border: 1px solid black;
+    margin-top: 30px;
+    font-size: 20px;
+}

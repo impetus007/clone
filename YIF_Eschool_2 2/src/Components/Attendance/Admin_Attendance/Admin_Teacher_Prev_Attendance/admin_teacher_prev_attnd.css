@@ -1,0 +1,54 @@
+.admin-teacher-prev-attnd-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.admin-teacher-prev-attnd-container-main {
+    width: 95%;
+}
+
+.admin-teacher-prev-attnd-container-main .top {
+    margin: 20px 0;
+}
+
+.admin-teacher-prev-attnd-container-main .top button {
+    background-color: #177777;
+    padding: 4px 20px;
+    color: white;
+}
+
+.admin-teacher-prev-attnd-container-main .middle {
+    display: flex;
+    margin: 20px 0;
+}
+
+.admin-teacher-prev-attnd-container-main .middle button {
+    padding: 10px 20px;
+    margin-left: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.77);
+}
+
+.admin-teacher-prev-attnd-container-main .bottom table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.admin-teacher-prev-attnd-container-main .bottom td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.admin-teacher-prev-attnd-container-main .bottom table tr:nth-child(odd) {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+.admin-teacher-prev-attnd-container-main .bottom table thead tr {
+
+    background-color: #dcdcdc !important;
+}

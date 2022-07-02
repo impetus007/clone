@@ -1,0 +1,62 @@
+.student-reports-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.student-reports-container-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.student-reports-table {
+    width: 100%;
+    /* max-width: 1300px; */
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.student-reports-table thead tr {
+    background-color: #dcdcdc !important;
+}
+
+.student-reports-table td,
+th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.student-reports-table tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+.student-reports-table tr:hover {
+    background-color: #dcdcdc;
+}
+
+.student-reports-table tbody>td {
+    display: flex;
+}
+
+.student-reports-bottom-container {
+    display: flex;
+    width: 100%;
+}
+
+.student-reports-bottom {
+    display: flex;
+    flex-direction: column;
+    /* flex: 0.4; */
+    width: 60%;
+    margin-top: 20px;
+}
+
+.report-overall-perf {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    min-width: 300px;
+}

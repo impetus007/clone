@@ -1,0 +1,42 @@
+.lib-chapter-progress {
+    margin-top: 25px;
+}
+
+.lib-chapter-progress h3 {
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.chapter-progress-container {
+    margin-top: 20px;
+}
+
+.lib-modules-outer {
+    font-size: 25px;
+    padding: 10px 5px;
+    background-color: #dfdfdf;
+    border: 1px solid black;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-modules-inner ul {
+    list-style: none;
+}
+
+.lib-modules-inner {
+    font-size: 20px;
+    height: 0;
+    overflow: hidden;
+}
+
+.lib-modules-inner-open {
+    padding: 10px 15px;
+    height: unset !important;
+}
+
+.lib-modules-inner ul li:not(:first-child) {
+    margin-top: 10px;
+}

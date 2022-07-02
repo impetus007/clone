@@ -1,0 +1,42 @@
+.Admin-over {
+    width: 100%;
+    height: 350px;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 158);
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.Admin-over h2 {
+    display: flex;
+}
+
+.Admin-over .progress {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 30%;
+    background-color: white;
+}
+
+.Admin-over-table {
+    width: 90%;
+    text-align: left;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.Admin-over-table td {
+    border: 2px solid black;
+}
+
+.Admin-over-table thead th {
+    background-color: #dcdcdc;
+}
+
+.Admin-over-table tr:nth-child(odd) {
+    background-color: white;
+}
+
+.Admin-over-table tr:hover {
+    background-color: #dcdcdc;
+}

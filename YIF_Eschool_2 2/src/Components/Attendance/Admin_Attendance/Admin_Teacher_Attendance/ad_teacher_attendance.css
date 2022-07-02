@@ -1,0 +1,80 @@
+.ad-attnd-teacher-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.ad-attnd-teacher-container-main {
+    width: 90%;
+}
+
+.ad-attnd-teacher-container-main .top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+.ad-attnd-teacher-container-main .top select {
+    margin-right: 20px;
+}
+
+.ad-attnd-teacher-container-main .middle {
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+}
+
+
+.ad-attnd-teacher-attnd-sheet-container .mark-all-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ad-attnd-teacher-attnd-sheet-container .mark-all-container input {
+    margin-left: 10px;
+}
+
+.ad-attnd-teacher-container-main .bottom table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.ad-attnd-teacher-container-main .bottom td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.ad-attnd-teacher-container-main .bottom thead tr {
+    background-color: #dcdcdc !important;
+}
+
+.ad-attnd-teacher-container-main .bottom table tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+
+.ad-attnd-teacher-container-main .bottom button {
+    margin-top: 30px;
+}
+
+
+.ad-attnd-teacher-container-main button {
+    margin: 10px 0;
+    padding: 10px 30px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.77);
+    min-width: 215px;
+}
+
+
+.ad-teacher-update-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

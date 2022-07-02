@@ -1,0 +1,86 @@
+.user-head {
+    display: flex;
+    justify-content: center;
+}
+
+.user-profile-container {
+    /* width: 35%; */
+}
+
+.user-details {
+    border: 2px solid black;
+    margin-left: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.user-details-container {
+    width: 90%;
+    /* height: 55vh; */
+    padding: 38px 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.user-profile-img-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.user-profile-img-container img {
+    width: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.user-details-info {
+    margin-top: 50px;
+}
+
+.user-info-item {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info-item input {
+    padding: 4px 8px;
+}
+
+.user-info-item label {
+    margin-right: 20px;
+}
+
+.user-head button {
+    width: 10em;
+    height: 3em;
+}
+
+.User-Edit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.User-Edit-Container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.User-Edit table {
+    border-radius: 5px;
+    font-size: 20px;
+    border: 3px solid black;
+    width: 100%;
+    max-width: 100%
+}
+
+.User-Edit button {
+    width: 10em;
+    height: 3em;
+}

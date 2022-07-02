@@ -1,0 +1,193 @@
+.Teacher_Dashboard {
+    display: flex;
+    min-height: 70vh;
+    padding: 0 80px;
+}
+
+
+/* Left Container */
+.teacher-db-left-container {
+    flex: 0.65;
+    margin-right: 10px;
+    display: flex;
+}
+
+.teacher-db-left {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.teacher-db-assessment {
+    height: 20%;
+}
+
+.teacher-db-assessment button {
+    padding: 8px 20px;
+    margin-left: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    transition: all 250ms ease-in-out;
+    background-color: #acc4f5;
+    cursor: pointer;
+}
+
+.teacher-db-assessment button:focus {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0);
+    transition: all 250ms ease-in-out;
+}
+
+.teacher-db-profile-container {
+    height: 40%;
+    border: 1px solid black;
+}
+
+.teacher-db-profile {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+.teacher-db-classes-container {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    height: 28%;
+}
+
+.teacher-db-classes-container h4 {
+    margin-bottom: 15px;
+}
+
+.teacher-db-classes-container button {
+    padding: 8px 20px;
+    margin-left: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    transition: all 250ms ease-in-out;
+    background-color: #acc4f5;
+    cursor: pointer;
+}
+
+.teacher-db-classes-container button:focus {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0);
+    transition: all 250ms ease-in-out;
+}
+
+
+/* Calendar , Events and Attendance */
+
+.teacher-db-right {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.teacher-db-calendar {
+    width: 100%;
+    /* height: 45%; */
+}
+
+.teacher-db-events {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 25%;
+}
+
+.teacher-db-event {
+    display: flex;
+    padding: 8px 4px;
+}
+
+.teacher-db-event:nth-child(odd) {
+    background-color: peachpuff;
+}
+
+.teacher-db-event p {
+    margin-right: 10px;
+}
+
+.teacher-db-attendance-container {
+    background-color: #bb9fee;
+    height: 25%;
+    border: 1px solid black;
+}
+
+.teacher-db-attendance {
+    padding: 8px 4px;
+}
+
+.teacher-db-attendance p {
+    font-size: 18px;
+    margin-left: 12px;
+    color: white;
+}
+
+.teacher-db-attendance button {
+    padding: 8px 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    transition: all 250ms ease-in-out;
+    background-color: white;
+    cursor: pointer;
+}
+
+.teacher-db-attendance button:focus {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0);
+    transition: all 250ms ease-in-out;
+}
+
+/* Right Container */
+
+
+.teacher-db-right-container {
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 600px; */
+}
+
+.teacher-db-content-container {
+    height: 45%;
+    background-color: #aedcae;
+    border: 1px solid black;
+
+}
+
+.teacher-db-content {
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.teacher-db-content-head {
+    font-size: 18px;
+    margin-bottom: 25px !important;
+    margin-top: 0 !important;
+}
+
+.teacher-db-content p {
+    margin: 15px;
+}
+
+
+.teacher-db-notice-container {
+    height: 45%;
+    background-color: #FFDAB9;
+    overflow: scroll;
+    border: 1px solid black;
+
+}
+
+.teacher-db-notice {
+    padding: 8px 20px;
+
+}
+
+.teacher-db-notice-head {
+    font-size: 18px;
+    margin-bottom: 25px !important;
+    margin-top: 0 !important;
+}

@@ -1,0 +1,41 @@
+.CEvalution {
+    display: flex;
+    flex-direction: column;
+}
+
+.CEvalution select {
+    width: 25%;
+    margin-left: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.div-progress-admin {
+    height: 100px;
+    margin-left: 10px;
+    border: 3px solid black;
+    padding: 25px 0px;
+    width: 80%;
+}
+
+.CEvalution button {
+    width: 70%;
+    height: 40px;
+    border: 3px solid black;
+    box-shadow: 2px 2px 10px;
+    background-color: white;
+}
+
+.CEvalution button:hover {
+    background-color: rgb(255, 255, 158);
+}
+
+.CEvalution h4,
+h2 {
+    margin-bottom: 15px;
+}
+
+.report-overall-perf {
+    margin: 10px 0;
+    width: 500px;
+}

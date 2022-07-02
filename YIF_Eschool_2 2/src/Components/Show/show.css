@@ -1,0 +1,25 @@
+.table {
+  width: "100%";
+  margin: 5rem auto;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.show-selector {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.show-selector button {
+  background-color: #f7f7f7;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+  margin-left: 0;
+  width: 100px;
+  padding: 5px;
+}

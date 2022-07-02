@@ -6,8 +6,10 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 
+
+
 function App() {
-  const [inputText, setInputText] = useState();
+  const [inputText, setInputText] = useState("hi");
   const [data, setData] = useState();
 
   const searchpokemon = (e) => {
@@ -21,7 +23,9 @@ function App() {
       });
   };
 
+
   return (
+
     <div className="App">
       <div className="header">
         {data ? <h1>{data.species.name}</h1> : <h1>Pokemon</h1>}

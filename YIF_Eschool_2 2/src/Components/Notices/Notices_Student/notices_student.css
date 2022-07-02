@@ -1,0 +1,25 @@
+.Notices_Student {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.notices-student-container {
+    width: 85%;
+}
+
+.notices-student-btn {
+    margin: 30px 0;
+    padding: 6px 8px;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+    transition: all 250ms ease-in-out;
+}
+
+.notices-student-btn:hover {
+
+    transition: all 250ms ease-in-out;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.55);
+
+}

@@ -1,0 +1,51 @@
+export const markAttendanceDummyData = [
+  {
+    _id: "hsgasa545hjasghgh44",
+    name: "Lorem",
+    present: false,
+    class: 7,
+    id: "123",
+  },
+  {
+    _id: "hsgasa545hjasghgh44",
+    name: "Lorem",
+    present: false,
+    class: 7,
+    id: "456",
+  },
+  {
+    _id: "hsgasa545hjasghgh44",
+    name: "Lorem",
+    present: false,
+    class: 7,
+    id: "789",
+  },
+  {
+    _id: "hsgasa545hjasghgh44",
+    name: "Lorem",
+    present: false,
+    class: 7,
+    id: "000",
+  },
+  {
+    _id: "hsgasa545hjasghgh44",
+    name: "Lorem",
+    present: false,
+    class: 7,
+    id: "012",
+  },
+  {
+    _id: "hsgasa545hjasghgh44",
+    name: "Lorem",
+    present: false,
+    class: 8,
+    id: "013",
+  },
+  {
+    _id: "hsgasa545hjasghgh44",
+    name: "Lorem",
+    present: false,
+    class: 8,
+    id: "014",
+  },
+];

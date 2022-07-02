@@ -1,0 +1,59 @@
+#library {
+    border-collapse: collapse;
+    border: 4px solid black;
+}
+
+#library td {
+    padding: 5px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+table tr td {
+    text-align: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#library tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#library tr:hover {
+    background-color: #ddd;
+}
+
+.library-generate-button {
+    background-color: rgb(55, 119, 208);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.library-back-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.slib-progress-container {}

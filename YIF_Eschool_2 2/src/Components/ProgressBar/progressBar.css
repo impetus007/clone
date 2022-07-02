@@ -1,0 +1,15 @@
+.ProgressBar {
+    flex: 0.8;
+    min-width: 100px;
+    min-height: 20px;
+    height: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+    background-color: white;
+
+}
+
+.progress-main {
+    background-color: #DCDCDC;
+    height: 100%;
+}

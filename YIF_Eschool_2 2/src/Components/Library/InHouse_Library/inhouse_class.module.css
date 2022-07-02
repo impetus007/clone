@@ -1,0 +1,74 @@
+/* containers */
+.container {
+    display: flex;
+    width: 70%;
+    margin: 5rem auto;
+    justify-content: center;
+    background: #dcdcdc;
+    height: max-content;
+    padding: 2rem;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+/* utilities */
+.btn {
+    background-color: aliceblue;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: antiquewhite;
+}
+
+.btn_add {
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.77);
+    border-radius: 0.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-left: 0;
+}
+
+.btn_add:active {
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.77) !important;
+}
+
+
+
+
+.create_class_inp_field {
+    display: flex;
+    flex-direction: column;
+}
+
+.create_class_inp_field {
+    margin-bottom: 10px;
+}
+
+.create_class_inp_field label {
+    margin-bottom: 5px;
+}
+
+.create_class_inp_field input,
+select {
+    width: 300px;
+    padding: 4px;
+    margin-left: 0 !important;
+    margin: 5px 0;
+}
+
+.create_class_inp_field button {
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.77);
+    border-radius: 0.5rem;
+    margin-left: 0;
+    width: 100px;
+    padding: 5px;
+}
+
+.create_class_inp_field button:hover {
+    background-color: antiquewhite;
+}

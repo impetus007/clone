@@ -1,0 +1,35 @@
+.Admin-Assess_dash-table {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.Admin-Assess_dash-table th {
+    background-color: #dcdcdc;
+}
+
+.Admin-Assess_dash-table td {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.Admin-Assess_dash-table tr:nth-child(odd) {
+    background-color: rgb(255, 255, 158);
+}
+
+.Admin-Assess_dash-table tr:hover {
+    background-color: #dcdcdc;
+}
+
+.Admin-Assess_dash-table tr td a {
+    text-decoration: underline;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.Admin-Assess_dash-table tr td a:hover {
+    color: rgb(50, 87, 255);
+}
