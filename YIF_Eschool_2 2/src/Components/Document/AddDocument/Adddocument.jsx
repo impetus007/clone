@@ -1,24 +1,38 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+
+
+import React, { useEffect } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Api from "../../../Api/axios";
 import { useDataLayerValue } from "../../../DataLayer/DataLayer";
+import Error from "../../ErrorSuccess/Error";
+import Success from "../../ErrorSuccess/Success";
+//import Links from '../Links';
 
-function Adddocument() {
-  const [errMessage, setErrMessage] = useState();
+const AddDocument_Admin = () => {
+  const [classNo, setClassNo] = useState("");
+  const [section, setSection] = useState("");
+  const [classes, setClasses] = useState([]);
   const [succMessage, setSuccMessage] = useState();
-  const [{ userDetails, loading }, dispatch] = useDataLayerValue();
-  const [document, setDocument] = useState({
-    select_class: "",
-    select_section: "",
-    title: "",
-    description: "",
+  const [errMessage, setErrMessage] = useState();
+  const [{ userDetails }, dispatch] = useDataLayerValue();
+  const [documentData, setDocumentData] = useState({
+    document_type: "Academic",
   });
 
-  const handleinput = (e) => {
-    setDocument({ ...document, [e.target.id]: e.target.value });
+  const handleInputChange = (e) => {
+    if (e.target.id === "file") {
+      setDocumentData({ ...documentData, [e.target.id]: e.target.files[0] });
+    } else {
+      setDocumentData({
+        ...documentData,
+        document_for: `${classNo} ${section}`,
+        [e.target.id]: e.target.value,
+      });
+    }
   };
 
-  const addDocument = (e) => {
+  const addDocuments = (e) => {
     e.preventDefault();
     dispatch({
       type: "SET_LOADING",
@@ -27,10 +41,11 @@ function Adddocument() {
     const XHR = new XMLHttpRequest(),
       FD = new FormData();
 
-    let keys = Object.keys(setDocument);
-    let values = Object.values(setDocument);
+    let keys = Object.keys(documentData);
+    let values = Object.values(documentData);
     keys.forEach((key, i) => {
       FD.append(key, values[i]);
+      console.log(key, values[i]);
     });
 
     // Define what happens on successful data submission
@@ -39,7 +54,7 @@ function Adddocument() {
         type: "SET_LOADING",
         loading: false,
       });
-      setSuccMessage("Document Created Successfully");
+      setSuccMessage("Document created successfully");
       setErrMessage();
     });
 
@@ -63,68 +78,101 @@ function Adddocument() {
   };
 
   return (
-    <form
-      action=""
-      name="form"
-      id="form"
-      onSubmit={(e) => {
-        addDocument();
-      }}
-    >
-      <div>
-        <div>
-          <select name="select_class" id="select_class" onChange={handleinput}>
-            <option>Select class</option>
-            <option>class 5</option>
-            <option>class 6</option>
-          </select>
-        </div>
+    <div>
+     
+
+      <form
+        onSubmit={(e) => {
+          addDocuments(e);
+        }}
+        className="form"
+      >
         <div>
           <select
-            name="select_section"
-            id="select_section"
-            onChange={handleinput}
+            name="class"
+            id="class"
+            onChange={(e) => setClassNo(e.target.value)}
+            required
           >
-            <option>Select Section</option>
-            <option>a</option>
-            <option>b</option>
+            <option value="0" selected>
+              Select Class
+            </option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+          </select>
+
+          <select
+            name="section"
+            id="section"
+            onChange={(e) => setSection(e.target.value)}
+            required
+          >
+            <option value="0" selected>
+              Select Section
+            </option>
+            <option>A</option>
+            <option>B</option>
           </select>
         </div>
-      </div>
-      <div>
-        <input
-          name="title"
-          id="title"
-          onChange={handleinput}
-          type="text"
-          placeholder="title"
-          style={{ width: 400 }}
-        />
-      </div>
-      <div>
-        <textarea
-          name="description"
-          id="description"
-          onChange={handleinput}
-          style={{ width: 400 }}
-          placeholder="description"
-          rows="10"
-        />
-      </div>
-      <div>
-        <input
-          name="filename"
-          id="filename"
-          onChange={handleinput}
-          type="file"
-        />
-      </div>
-      <button type="submit">Add Document</button>
-      <NavLink to="/document">
-        <button>back</button>
-      </NavLink>
-    </form>
-  );
-}
 
-export default Adddocument;
+        <div>
+          <input
+            className="input"
+            type="text"
+            id="name"
+            style={{width:400}}
+            placeholder="Enter document title"
+            onChange={(e) => {
+              handleInputChange(e);
+            }}
+            required
+          />
+        </div>
+
+        <div>
+          <textarea
+            className="input"
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+            style={{width:400}}
+            placeholder="Enter Description"
+            onChange={(e) => {
+              handleInputChange(e);
+            }}
+            required
+          ></textarea>
+        </div>
+
+        <div>
+          <input
+            name="file"
+            id="file"
+            type="file"
+            onChange={(e) => {
+              handleInputChange(e);
+            }}
+            accept="application/pdf"
+          />
+        </div>
+        <div>
+          {succMessage ? (
+            <Success message={succMessage} />
+          ) : errMessage ? (
+            <Error message={errMessage} />
+          ) : (
+            ""
+          )}
+          <button type="submit">Add Document</button>
+          <Link to="/document">
+            <button>Back</button>
+          </Link>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default AddDocument_Admin;

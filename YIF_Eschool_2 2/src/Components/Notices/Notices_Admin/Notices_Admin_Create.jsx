@@ -36,7 +36,7 @@ function Notices_Admin_Create() {
       loading: true,
     });
     const XHR = new XMLHttpRequest(),
-      FD = new FormData();
+    FD = new FormData();
 
     let keys = Object.keys(noticeData);
     let values = Object.values(noticeData);

@@ -29,10 +29,10 @@ import Add_details from "../FeeCollection/Admin_Fee_Collection/Add-details/Add_d
 import Complete_details from "../FeeCollection/Admin_Fee_Collection/Complete_details/Complete_details";
 import Student_fees_collection from "../FeeCollection/Student_Fee_Collection/Student_Fee_Collection";
 
-// documents 
+// documents
 import Document from "../Document/Document";
 import Adddocument from "../Document/AddDocument/Adddocument";
-import Academic from "../Document/Academic/Academic"
+import Academic from "../Document/Academic/Academic";
 
 // Imports for reports
 import Student_Reports from "../Reports/Student_Reports/Student_Reports";
@@ -120,7 +120,6 @@ import { useDataLayerValue } from "../../DataLayer/DataLayer";
 import NotFound from "../NotFound/NotFound";
 import Quiz from "../Quiz/Quiz";
 import ProtectedRoutes from "../ProtectedRoutes/ProtectedRoutes";
-
 
 function Body() {
   const [
@@ -392,6 +391,17 @@ function Body() {
                 )
               }
             />
+            <Route
+              exact
+              path="/fees-collection/Complete-Details"
+              element={
+                userDetails?.userType === "TEACHER" ? (
+                  <Complete_details />
+                ) : (
+                  <NotFound />
+                )
+              }
+            />
             {/* Document */}
             <Route
               exact
@@ -402,9 +412,20 @@ function Body() {
                 ) : (
                   <NotFound />
                 )
-              } 
-              />
-               <Route
+              }
+            />
+             <Route
+              exact
+              path="/document"
+              element={
+                userDetails?.userType === "TEACHER" ? (
+                  <Document />
+                ) : (
+                  <NotFound />
+                )
+              }
+            />
+            <Route
               exact
               path="/document/adddocument"
               element={
@@ -413,9 +434,20 @@ function Body() {
                 ) : (
                   <NotFound />
                 )
-              } 
-              />
-               <Route
+              }
+            />
+             <Route
+              exact
+              path="/document/adddocument"
+              element={
+                userDetails?.userType === "TEACHER" ? (
+                  <Adddocument />
+                ) : (
+                  <NotFound />
+                )
+              }
+            />
+            <Route
               exact
               path="/document/academic"
               element={
@@ -424,11 +456,19 @@ function Body() {
                 ) : (
                   <NotFound />
                 )
-              } 
-              />
-
-
-
+              }
+            />
+             <Route
+              exact
+              path="/document/academic"
+              element={
+                userDetails?.userType === "TEACHER" ? (
+                  <Academic />
+                ) : (
+                  <NotFound />
+                )
+              }
+            />
 
             <Route
               exact
