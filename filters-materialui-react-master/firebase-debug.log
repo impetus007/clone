@@ -1,0 +1,108 @@
+[debug] [2022-07-12T12:04:27.776Z] ----------------------------------------------------------------------
+[debug] [2022-07-12T12:04:27.778Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-07-12T12:04:27.778Z] CLI Version:   10.8.0
+[debug] [2022-07-12T12:04:27.778Z] Platform:      darwin
+[debug] [2022-07-12T12:04:27.778Z] Node Version:  v14.17.5
+[debug] [2022-07-12T12:04:27.779Z] Time:          Tue Jul 12 2022 17:34:27 GMT+0530 (India Standard Time)
+[debug] [2022-07-12T12:04:27.779Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-12T12:04:27.830Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-12T12:04:27.830Z] > authorizing via signed-in user (vishal2219singh@gmail.com)
+[debug] [2022-07-12T12:04:27.830Z] [iam] checking project filteration-8721c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-12T12:04:27.832Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions [none]
+[debug] [2022-07-12T12:04:27.832Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-12T12:04:32.630Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions 200
+[debug] [2022-07-12T12:04:32.631Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-12T12:04:32.632Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c [none]
+[debug] [2022-07-12T12:04:33.137Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c 200
+[debug] [2022-07-12T12:04:33.138Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c {"projectId":"filteration-8721c","projectNumber":"780530632914","displayName":"filteration","name":"projects/filteration-8721c","resources":{"hostingSite":"filteration-8721c"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'filteration-8721c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-12T12:04:33.143Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c [none]
+[debug] [2022-07-12T12:05:03.152Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/filteration-8721c
+[debug] [2022-07-12T12:05:03.345Z] FirebaseError: Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/filteration-8721c
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:236:35)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[error] 
+[error] Error: Failed to get Firebase project filteration-8721c. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-12T12:05:19.191Z] ----------------------------------------------------------------------
+[debug] [2022-07-12T12:05:19.192Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-07-12T12:05:19.192Z] CLI Version:   10.8.0
+[debug] [2022-07-12T12:05:19.193Z] Platform:      darwin
+[debug] [2022-07-12T12:05:19.193Z] Node Version:  v14.17.5
+[debug] [2022-07-12T12:05:19.194Z] Time:          Tue Jul 12 2022 17:35:19 GMT+0530 (India Standard Time)
+[debug] [2022-07-12T12:05:19.194Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-12T12:05:19.246Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-12T12:05:19.246Z] > authorizing via signed-in user (vishal2219singh@gmail.com)
+[debug] [2022-07-12T12:05:19.246Z] [iam] checking project filteration-8721c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-12T12:05:19.248Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions [none]
+[debug] [2022-07-12T12:05:19.248Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-12T12:06:34.269Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions
+[debug] [2022-07-12T12:06:34.274Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c [none]
+[debug] [2022-07-12T12:06:34.839Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c 200
+[debug] [2022-07-12T12:06:34.840Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c {"projectId":"filteration-8721c","projectNumber":"780530632914","displayName":"filteration","name":"projects/filteration-8721c","resources":{"hostingSite":"filteration-8721c"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'filteration-8721c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-12T12:06:34.843Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c [none]
+[debug] [2022-07-12T12:07:04.847Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/filteration-8721c
+[debug] [2022-07-12T12:07:40.032Z] FirebaseError: Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/filteration-8721c
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:236:35)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[error] 
+[error] Error: Failed to get Firebase project filteration-8721c. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-12T12:07:49.990Z] ----------------------------------------------------------------------
+[debug] [2022-07-12T12:07:49.991Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-07-12T12:07:49.991Z] CLI Version:   10.8.0
+[debug] [2022-07-12T12:07:49.991Z] Platform:      darwin
+[debug] [2022-07-12T12:07:49.991Z] Node Version:  v14.17.5
+[debug] [2022-07-12T12:07:49.993Z] Time:          Tue Jul 12 2022 17:37:49 GMT+0530 (India Standard Time)
+[debug] [2022-07-12T12:07:49.993Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-12T12:07:50.047Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-12T12:07:50.048Z] > authorizing via signed-in user (vishal2219singh@gmail.com)
+[debug] [2022-07-12T12:07:50.048Z] [iam] checking project filteration-8721c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-12T12:07:50.049Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions [none]
+[debug] [2022-07-12T12:07:50.050Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-12T12:07:51.576Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions 200
+[debug] [2022-07-12T12:07:51.576Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-12T12:07:51.578Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c [none]
+[debug] [2022-07-12T12:08:21.591Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/filteration-8721c
+[debug] [2022-07-12T12:09:36.685Z] FirebaseError: Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/filteration-8721c
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:236:35)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[error] 
+[error] Error: Failed to get Firebase project filteration-8721c. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-12T12:09:38.477Z] ----------------------------------------------------------------------
+[debug] [2022-07-12T12:09:38.478Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-07-12T12:09:38.479Z] CLI Version:   10.8.0
+[debug] [2022-07-12T12:09:38.479Z] Platform:      darwin
+[debug] [2022-07-12T12:09:38.479Z] Node Version:  v14.17.5
+[debug] [2022-07-12T12:09:38.483Z] Time:          Tue Jul 12 2022 17:39:38 GMT+0530 (India Standard Time)
+[debug] [2022-07-12T12:09:38.484Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-12T12:09:38.535Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-12T12:09:38.535Z] > authorizing via signed-in user (vishal2219singh@gmail.com)
+[debug] [2022-07-12T12:09:38.536Z] [iam] checking project filteration-8721c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-12T12:09:38.538Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions [none]
+[debug] [2022-07-12T12:09:38.538Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-12T12:09:39.931Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions 200
+[debug] [2022-07-12T12:09:39.932Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/filteration-8721c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-12T12:09:39.936Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c [none]
+[debug] [2022-07-12T12:09:40.396Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c 200
+[debug] [2022-07-12T12:09:40.397Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c {"projectId":"filteration-8721c","projectNumber":"780530632914","displayName":"filteration","name":"projects/filteration-8721c","resources":{"hostingSite":"filteration-8721c"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'filteration-8721c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-12T12:09:40.406Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/filteration-8721c [none]
+[debug] [2022-07-12T12:10:10.411Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/filteration-8721c
+[debug] [2022-07-12T12:11:25.500Z] FirebaseError: Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/filteration-8721c
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:236:35)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[error] 
+[error] Error: Failed to get Firebase project filteration-8721c. Please make sure the project exists and your account has permission to access it.
